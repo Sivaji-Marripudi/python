@@ -6,7 +6,7 @@ In Python dictionaries are written with curly brackets, and they have keys and v
 mydict = {"ap":"amaravathi","telangana":"hyderabad",""}
 print(mydict)
 # access dictonary
-print(mydict["name"])
+print(mydict["ap"])
 #loop through dictonary
 for i,j in mydict.items():
     print(i,j)
