@@ -52,3 +52,27 @@ print(b)
 for i in l:
     print(i)
 print(l[::-1])
+
+# how to check if list is empty or not
+list = []
+if not list:
+  print("empty")
+else:
+  print("not empty")
+# remove duplicates from list
+list = [1,1,2,2,2,3,4,2,5,5,6,4]
+res = []
+for i in list:
+  if i not in res:
+      res.append(i)
+print(res)
+########### or ##########
+print(set(list))
+######## or ########
+from collections import Counter
+res = []
+A = Counter(list)
+for i,j in A.items():
+  res.append(i)
+print(res)
+  
