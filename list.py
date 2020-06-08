@@ -10,3 +10,45 @@ print(list[::-1]) # it prints reverse of a list
 # loop through list
 for i in list:
   print(i)
+  
+# add elements
+# append,extend,insert
+list = [1,2,3,4,5]
+list.append(5)
+print(list)
+list.extend((6,7,8,9,10))
+print(list)
+list.insert(0,1)
+print(list)
+
+# del,remove,pop
+# above methods are used to delete
+
+li = ["hai","hello","ok","hmm"]
+del li[2]
+print(li)
+li.remove("hmm")
+print(li)
+li.pop(0)
+print(li)
+li.clear()
+print(li)
+
+# sorted order i.e asec,desc
+lis = [36,67,87,98,43,88,23,19,34,76]
+lis.sort(reverse = True)
+print(lis)
+lis.sort(reverse = False)
+print(lis)
+print(sorted(lis))
+
+# particular
+l = ["hyd","bangalore","chennai","mumbai","ongole"]
+a = l.index("ongole")
+print(a)
+#count
+b = l.count("hyd")
+print(b)
+for i in l:
+    print(i)
+print(l[::-1])
