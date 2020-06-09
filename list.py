@@ -75,4 +75,8 @@ A = Counter(list)
 for i,j in A.items():
   res.append(i)
 print(res)
-  
+####### or ########
+for i in list:
+  if list.count(i)>1:
+    list.remove(i)
+print(list)
