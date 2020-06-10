@@ -1,0 +1,6 @@
+what is a pandas? 
+     --->pands is a software library written for the python programming language for data manipulation and analysis
+     --->pandas is suited for Tabular data wit heterogeneously-typed columns
+     ---->orderd and unoreders time series
+     ---->arbitary matrix data with row and columns labels
+     --->any other form of observational /statical data sets
