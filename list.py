@@ -126,3 +126,22 @@ if len(common) > 0:
     print(True)
 else:
     print(False)
+# longer word in list
+def longer(list,n):
+    res = []
+    for i in list:
+        if len(i) > n:
+            res.append(i)
+    print(res)
+    print(len(res))
+longer(["sivaji","ongole","hyderabad","bangalore","python","django"],5)
+# how to add two lists by the position of index numbers
+list1 = [10,9,8]
+list2 = [1,2,3]
+res = [i+j for i,j in zip(list1,list2)]
+print(res)
+# Another method
+res1 = []
+for i in range(len(list1)):
+  res1.append(list1[i] + list2[i])
+print(res1)
