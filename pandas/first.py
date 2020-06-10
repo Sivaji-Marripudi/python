@@ -83,9 +83,8 @@ import pandas as pd
 data = ["siva","ram","ravi","raj","rakesh","venkat","pavan","shabri"]
 series = pd.Series(data,index = [i for i in range(1,len(data)+1)])
 print(series)
-
-''' two dimensional in pandas(data frame)  '''
-'''import pandas as pd
+# two dimensional in pandas(data frame)
+import pandas as pd
 data = {
     "number":[1,2,3,4,5],
     "name":["sivaji","ram","pavan","ravi","venkat"],
@@ -95,8 +94,8 @@ data = {
 
 }
 #data1 = pd.DataFrame(data)
-data1 = pd.DataFrame(data,index = ["*","*","*","*","*"])
+data1 = pd.DataFrame(data,index = [i for i in range(1,len(data)+1)])
 print(data1)
 # slicing
 print(data1.head(3))
-print(data1.tail(3))'''
+print(data1.tail(3))
