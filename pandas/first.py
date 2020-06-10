@@ -78,3 +78,25 @@ data = [1,2,3,4,5]
 series = pd.Series(data)
 series = pd.Series(data,index = ["a","b","c","d","e"])
 print(series)
+
+import pandas as pd
+data = ["siva","ram","ravi","raj","rakesh","venkat","pavan","shabri"]
+series = pd.Series(data,index = [i for i in range(1,len(data)+1)])
+print(series)
+
+''' two dimensional in pandas(data frame)  '''
+'''import pandas as pd
+data = {
+    "number":[1,2,3,4,5],
+    "name":["sivaji","ram","pavan","ravi","venkat"],
+    "gender":["male","male","male","male","male"],
+    "height":[5.11,5.9,5.10,5.8,6],
+    "gmail":["sivaji@gmail.com","ram@gamil.com","pavan@gmail.com","ravi@gmail.com","venat@gmail.com"]
+
+}
+#data1 = pd.DataFrame(data)
+data1 = pd.DataFrame(data,index = ["*","*","*","*","*"])
+print(data1)
+# slicing
+print(data1.head(3))
+print(data1.tail(3))'''
