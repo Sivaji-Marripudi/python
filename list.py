@@ -98,3 +98,33 @@ for i in list:
 print(sum)
 # method 2
 print(sum(list))
+# Write a Python program to count the number of strings where the string length is 2 or more and the first and last character are same from a given list of strings
+list = ["abc","acd","xyz","1221","1341"]
+res = []
+for i in list:
+    if len(i) > 1 and i[0] == i[-1]:
+        res.append(i)
+print(res)
+print(len(res))
+# check all elements are equal in list or not
+list = [1,1,1,1,1,1]
+first = list[0]
+for i in list:
+    if i != first:
+        print("not equal")
+        break
+else:
+    print("equal")
+# returns true atleast one common member in two lists
+list1 = [1,2,3,4,5,6,7,8,11,23,45]
+list2 = [20,21,24,25,26,91]
+common = []
+for i in list1:
+    for j in list2:
+        if i == j:
+            common.append(i)
+print(common)
+if len(common) > 0:
+    print(True)
+else:
+    print(False)
