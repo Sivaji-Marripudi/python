@@ -10,7 +10,6 @@ print(list[::-1]) # it prints reverse of a list
 # loop through list
 for i in list:
   print(i)
-  
 # add elements
 # append,extend,insert
 list = [1,2,3,4,5]
@@ -20,10 +19,8 @@ list.extend((6,7,8,9,10))
 print(list)
 list.insert(0,1)
 print(list)
-
 # del,remove,pop
 # above methods are used to delete
-
 li = ["hai","hello","ok","hmm"]
 del li[2]
 print(li)
@@ -33,7 +30,6 @@ li.pop(0)
 print(li)
 li.clear()
 print(li)
-
 # sorted order i.e asec,desc
 lis = [36,67,87,98,43,88,23,19,34,76]
 lis.sort(reverse = True)
@@ -41,7 +37,6 @@ print(lis)
 lis.sort(reverse = False)
 print(lis)
 print(sorted(lis))
-
 # particular
 l = ["hyd","bangalore","chennai","mumbai","ongole"]
 a = l.index("ongole")
@@ -145,3 +140,42 @@ res1 = []
 for i in range(len(list1)):
   res1.append(list1[i] + list2[i])
 print(res1)
+# find smallest and largest number in list
+list = [88,87,95,48,63,100,34,23,54,1,2,3,4,5,6,7,8,9]
+a = sorted(list)
+print(a[1]) # second smallest number
+print(a[-2]) # second largest number
+# converts nested list to list
+list = [[1,2,3],[4,5,6],[7,8,9]]
+res = []
+for i in list:
+    res.extend(i)
+print(res)
+# find numbers above 40 in list
+list = [10,20,30,40,50,60,70,80,90,100]
+res = []
+for i in range(40,100+1):
+    if i in list:
+        res.append(i)
+print(res)
+print(len(res))
+# converts list to string without using methods
+list = [1,2,3]
+res = ""
+for i in list:
+    i = str(i)
+    res += i
+print(res)
+# find common numbers in two lists
+list1 = [1,2,3,4,5,6,7,8,9,10]
+list2 = [11,12,13,4,5,16,17]
+res1 = []
+res2 = []
+if list1 in list2:
+    res1.append(list1)
+elif list2 in list1:
+    res2.append(list2)
+else:
+    pass
+print(res1)
+print(res2)
