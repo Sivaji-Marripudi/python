@@ -57,3 +57,12 @@ print(x+y+z)
 x,y1 = "12"
 y2,z = "34"
 print(x +y2 + z)
+# find largest word in text
+text = "hyderabad chennai bangalore kolkata ongole".split()
+max = text[0]
+max_len = len(text[0])
+for i in text:
+    if len(i) > max_len:
+        max_len = len(i)
+        max = i
+print(max)
