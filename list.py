@@ -82,3 +82,19 @@ for i in list:
   if list.count(i)>1:
     list.remove(i)
 print(list)
+
+# multiplies all items in the list
+list = [2,3,4,5,6,7]
+res = 1
+for i in list:
+    res *= i
+print(res)
+# sum of all items in the list
+# method 1
+list = [2,3,4,53,56,76,45]
+sum = 0
+for i in list:
+    sum += i
+print(sum)
+# method 2
+print(sum(list))
