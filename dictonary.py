@@ -111,4 +111,12 @@ for i,j in student_data.items():
     if j not in result.values():
         result[i] = j
 print(result)
-
+# find vowels and consonants in text using dicts
+dict = {"vowel":0 ,"conso":0}
+text = input("Enter the text : ")
+for i in text:
+    if i in ("a","e","i","o","u"):
+        dict["vowel"] += 1
+    else:
+        dict["conso"] += 1
+print(dict)
