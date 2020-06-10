@@ -76,6 +76,8 @@ for i,j in A.items():
   res.append(i)
 print(res)
 ####### or ########
+# remove duplicates to orderwise
+list = [1,1,1,1,2,2,2,3,3,3,4,4,5,6,6]
 for i in list:
   if list.count(i)>1:
     list.remove(i)
