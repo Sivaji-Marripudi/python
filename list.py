@@ -179,3 +179,15 @@ else:
     pass
 print(res1)
 print(res2)
+
+# find vowels and consonants
+v = []
+c = []
+text = input("enter the text : ")
+for i in text:
+  if i in ("a","e","i","o","u"):
+    v.append(i)
+  else:
+    c.append(i)
+print(v)
+print(c)
