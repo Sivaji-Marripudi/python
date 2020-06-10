@@ -20,7 +20,7 @@ print(b)
 # count words
 para = "jhgksdyjdiod jfwlfwj jilfwkfj figwiofyek fiegfeoil fih3ilb diofheil hoilihoi kfhefoib lfhoil "
 print(para.count(" ") + 1)
-###### or ####
+###### another method ####
 from collections import Counter
 para = "jhgksdyjdiod jfwlfwj jilfwkfj figwiofyek fiegfeoil fih3ilb diofheil hoilihoi kfhefoib lfhoil ".split()
 words = Counter(para)
@@ -32,3 +32,28 @@ for i in words:
         palin.append(i)
 print(palin)
 print(len(palin))
+# prints after extension of the filename
+# example--- input :- sivaji.py,output :- py
+from collections import *
+a = "sivaji.java".split(".")
+b = Counter(a)
+c = list(b)
+print(c[-1])
+###### ANOTHER METHOD 
+a = "sivaji.java".split(".")
+print(a[-1])
+# find index number 
+s = "apple"
+x = s.find("p")
+print(x)
+y = s.find("l")
+print(y)
+z = s.find(" ")
+print(z)
+X = s.find("s")
+print(X)
+print(x+y+z)
+# imp
+x,y1 = "12"
+y2,z = "34"
+print(x +y2 + z)
