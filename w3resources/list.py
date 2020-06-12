@@ -80,3 +80,20 @@ def check(a,n):
             res.append(i)
     print(res)
 check(['hyderabad','bangalore','chennai','kolkata','ongole','mumbai','pune','noida'],'l')
+
+# removing even numbers in list
+li = [1,2,3,4,5,6,7,8,9,11,13]
+res = [i for i in li if i % 2 != 0]
+print(res)
+
+# removing odd numbers in list
+li = [22,3,4,55,4,3,66,77,88]
+res = [i for i in li if i % 2 == 0]
+print(res)
+
+#  Write a Python program to generate and print a list of first and last 5 elements where the values are square of numbers between 1 and 30 (both included).
+res = [i**2 for i in range(1,31)]
+new_res = []
+new_res.extend(res[0:5])
+new_res.extend(res[-5:])
+print(new_res)
