@@ -108,3 +108,18 @@ print(' '.join(li))
 
 # get index of item in a list
 print(li.index('hai'))
+
+# Write a Python program to change the position of every n-th value with the (n+1)th in a list.
+def change(l,n):
+    l[n],l[n+1] = l[n+1],l[n]
+    print(l)
+change(['hyd','bangalore','ongole','chennai','mumbai','goa'],2)
+
+# Write a Python program to convert a list of multiple integers into a single integer.
+l = [25,4,1998]
+n = []
+for i in l:
+    j = str(i)
+    n.append(j)
+r = int(''.join(n))
+print(r)
