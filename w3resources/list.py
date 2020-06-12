@@ -73,13 +73,12 @@ print(res)
 
 # Write a Python program to find the list of words that are longer than n from a given list of words.
 def check(a,n):
-    n = int(input('enter the n value : '))
     res = []
     for i in a:
         if len(i) > n:
             res.append(i)
     print(res)
-check(['hyderabad','bangalore','chennai','kolkata','ongole','mumbai','pune','noida'],'l')
+check(['hyderabad','bangalore','chennai','kolkata','ongole','mumbai','pune','noida'],4)
 
 # removing even numbers in list
 li = [1,2,3,4,5,6,7,8,9,11,13]
@@ -102,3 +101,10 @@ print(new_res)
 list = ["ap","tn","ka","mh","py","jk","go","ts"]
 for i,j in enumerate(list):
     print(i,j)
+
+# Write a Python program to convert a list of characters into a string.
+li = ['hai','how','are','you!']
+print(' '.join(li))
+
+# get index of item in a list
+print(li.index('hai'))
