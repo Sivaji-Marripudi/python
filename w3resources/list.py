@@ -97,3 +97,8 @@ new_res = []
 new_res.extend(res[0:5])
 new_res.extend(res[-5:])
 print(new_res)
+
+# Write a Python program access the index of a list.
+list = ["ap","tn","ka","mh","py","jk","go","ts"]
+for i,j in enumerate(list):
+    print(i,j)
