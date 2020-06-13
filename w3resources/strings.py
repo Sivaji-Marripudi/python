@@ -1,4 +1,4 @@
-# count words in text
+'''# count words in text
 text = 'hai,good morning!'
 words = text.count(" ") + 1
 print(words)
@@ -46,4 +46,25 @@ elif text[-3:] != 'ing' and len(text) > 2:
     print(text + 'ing')
 else:
     print(text)
-    
+
+# swap comma and dot in string
+num = '192,156.47.8388,8389.8858,33.555,090,55.66,444.55'
+res1 = num.replace(',','comma')
+res1 = res1.replace('.',',')
+res1 = res1.replace('comma','.')
+print(res1)
+print(num)
+
+# convert str to list
+s = 'hai'
+print(list(s))
+
+# count and display vowels in string
+text = input('enter the text : ')
+l = ''
+for i in text:
+    if i in ('a','e','i','o','u'):
+        l += i
+print(l)
+print(len(l))'''
+        
