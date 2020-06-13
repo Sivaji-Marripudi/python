@@ -99,8 +99,3 @@ if(len(text) % 4 == 0):
     print(text[::-1])
 else:
     print(text)
-
-
-
-
-        
