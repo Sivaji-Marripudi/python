@@ -1,4 +1,4 @@
-'''# count words in text
+# count words in text
 text = 'hai,good morning!'
 words = text.count(" ") + 1
 print(words)
@@ -92,7 +92,13 @@ for i in text:
 print(res)
 ######### ANOTHER METHOD
 print(text.swapcase())
-'''
+
+#  Write a Python function to reverses a string if it's length is a multiple of 4
+text = input('enter the text : ')
+if(len(text) % 4 == 0):
+    print(text[::-1])
+else:
+    print(text)
 
 
 
