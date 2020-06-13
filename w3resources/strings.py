@@ -54,6 +54,16 @@ res1 = res1.replace('.',',')
 res1 = res1.replace('comma','.')
 print(res1)
 print(num)
+### ANOTHER METHOD
+num = '192.168.4.222,808,45'
+res = ''
+for i in num:
+    if i == '.':
+        i = ','
+    elif i == ',':
+        i = '.'
+    res += i
+print(res)
 
 # convert str to list
 s = 'hai'
@@ -66,5 +76,25 @@ for i in text:
     if i in ('a','e','i','o','u'):
         l += i
 print(l)
-print(len(l))'''
+print(len(l))
+
+# swap lower and uppercase in string
+text = input('enter the text : ')
+res = ''
+for i in text:
+    if i.isupper():
+        i = i.lower()
+    elif i.islower():
+        i = i.upper()
+    else:
+        pass
+    res += i
+print(res)
+######### ANOTHER METHOD
+print(text.swapcase())
+'''
+
+
+
+
         
