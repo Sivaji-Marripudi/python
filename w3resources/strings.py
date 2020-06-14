@@ -99,3 +99,34 @@ if(len(text) % 4 == 0):
     print(text[::-1])
 else:
     print(text)
+
+# remove the nth index of character in string
+def removee(text,n):
+    text = input('enter the text : ')
+    n = int(input('enter the index number : '))
+    return text[:n] + text[n+1:]
+print(removee('text','n'))
+
+# first and last character exchanged in string
+text = input('enter the text : ')
+print(text[-1] + text[1:-1] + text[0])
+
+# prints the unique words in sorted form from a comma separated sequence of words
+text = input('enter the text : ').split(",")
+li = []
+for i in text:
+    if i not in li:
+        li.append(i)
+sort = sorted(li)
+print(','.join(sort))
+######## ANOTHER METHOD
+print(','.join(sorted(list(set(text)))))
+
+# insert string in the middle of another string
+def insertt(a,b):
+    mid = len(a) // 2
+    res = a[0:mid] + b + a[mid:]
+    return res
+print(insertt('[[]]','python'))
+print(insertt('<<>>','HTML'))
+print(insertt('{{}}','dictonary'))   
