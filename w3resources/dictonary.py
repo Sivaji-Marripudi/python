@@ -28,3 +28,43 @@ else:
 dic = {n:n**2 for n in range(1,5+1)}
 print(dic)
 
+#  Write a Python program to sum all the items in a dictionary
+dic =  {1:3,2:5,3:50,4:58,5:44,6:44,7:98,8:34}
+sum = 0
+for i,j in dic.items():
+    sum += j
+print(sum)
+
+# Write a Python program to remove a key from a dictionary
+dic =  {1:3,2:5,3:50,4:58,5:44,6:44,7:98,8:34}
+if 7 in dic.keys():
+    del dic[7]
+print(dic)
+
+# Write a Python program to get the maximum and minimum value in a dictionary
+dic = {1:3,2:5,3:50,4:58,5:44,6:44,7:98,8:34}
+li = []
+for i,j in dic.items():
+    li.append(j)
+print(min(li))
+print(max(li))
+
+#  Write a Python program to check a dictionary is empty or not.
+dic = {}
+if not dic:
+    print('empty')
+else:
+    print('not empty')
+
+# check whether it is a dict or not,if it is a dict prints True otherwise  False
+dic = {1:'ap',2:'ts'}
+print(isinstance(dic,dict))
+
+# map two lists into a dictonary
+l1 = ['ap','ts','tn','kn','ke','go','mh']
+l2 = ['am','hyd','che','bnglr','thir','panaji','mumb']
+res = []
+for i in zip(l1,l2):
+    res.append(i)
+print(dict(res))
+    
