@@ -3,6 +3,11 @@ import operator
 mydict = {'ap':'amaravathi','tn':'chen','kn':'bnglr','ke':'thriva','goa':'panaji','ts':'hyd'}
 print(dict(sorted(mydict.items(),key = operator.itemgetter(1))))
 
+# Sorted dict by values in DESC
+from collections import Counter
+a = Counter(mydict)
+print(a)
+
 # add key to a dict
 mydict = {0:10,1:20,2:30}
 mydict.update({3:40})
@@ -67,4 +72,37 @@ res = []
 for i in zip(l1,l2):
     res.append(i)
 print(dict(res))
-    
+############# ANOTHER METHOD
+a = dict(zip(l1,l2))
+print(a)
+
+# remove duplicate values in dict
+dic = {1:10,2:20,3:30,4:10,5:50,6:60,10:10}
+res = {}
+for i,j in dic.items():
+    if j not in res.values():
+        res[i] = j
+print(res)
+
+# Write a Python program to print all unique values in a dictionary. 
+mydict =  [{"V":"S001"}, {"V": "S002"}, {"VI": "S001"}, {"VI": "S005"},{"VII":"S005"}, {"V":"S009"},{"VIII":"S007"}]
+li = []
+for i in mydict:
+    for a in i.values():
+        li.append(a)
+print(set(li))
+
+# Write a Python program to create and display all combinations of letters, selecting each letter from a different key in a dictionary.
+# Sample data : {'1':['a','b'], '2':['c','d']},Expected Output: ac ad bc bd
+mydict = {'1':['a','b'], '2':['c','d']}
+res = []
+res1 = []
+for i in mydict.values():
+    res.extend(i)
+for i in res[0:len(res)//2]:
+    for j in res[len(res)//2:]:
+        print(i + j)
+
+# Write a Python program to combine values in python list of dictionaries. 
+# Sample data: [{'item': 'item1', 'amount': 400}, {'item': 'item2', 'amount': 300}, {'item': 'item1', 'amount': 750}]
+# Expected Output: Counter({'item1': 1150, 'item2': 300})
