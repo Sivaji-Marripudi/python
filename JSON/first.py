@@ -256,6 +256,7 @@ states = '''
   }
     
 '''
+
 name = []
 # prints dictonary format
 a = json.loads(states)
