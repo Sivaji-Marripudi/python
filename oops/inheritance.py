@@ -5,10 +5,10 @@ class employee():
         self.age = age
         self.salary = salary
 class childemployee(employee):
-    def __init__(self,name,age,id):
+    def __init__(self,name,age,idd):
         self.name = name
         self.age = age
-        self.id = id
+        self.id = idd
 e1 = employee("sivaji",21,300000)
 e2 = childemployee("pavan",20,463)
 print(e1.__dict__)
