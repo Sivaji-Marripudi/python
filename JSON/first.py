@@ -261,6 +261,7 @@ name = []
 # prints dictonary format
 a = json.loads(states)
 for i,j in a.items():
+  print(i,j)
   for data in j:
     for keys,values in data.items():
       name.append(values)
@@ -268,4 +269,4 @@ for i in name[2::3]:
   print(i)
 # prints json format
 b = json.dumps(a,indent = 3)
-print(b)
+#print(b)

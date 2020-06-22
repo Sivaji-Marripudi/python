@@ -32,6 +32,11 @@ else:
 # Write a Python script to generate and print a dictionary that contains a number (between 1 and n) in the form (x, x*x).
 dic = {n:n**2 for n in range(1,5+1)}
 print(dic)
+######### Another method
+dict = {}
+for i in range(1,11):
+    dict[i] = i * i
+print(dict)
 
 #  Write a Python program to sum all the items in a dictionary
 dic =  {1:3,2:5,3:50,4:58,5:44,6:44,7:98,8:34}
@@ -64,7 +69,6 @@ else:
 # check whether it is a dict or not,if it is a dict prints True otherwise  False
 dic = {1:'ap',2:'ts'}
 print(isinstance(dic,dict))
-
 # map two lists into a dictonary
 l1 = ['ap','ts','tn','kn','ke','go','mh']
 l2 = ['am','hyd','che','bnglr','thir','panaji','mumb']
@@ -105,4 +109,42 @@ for i in res[0:len(res)//2]:
 
 # Write a Python program to combine values in python list of dictionaries. 
 # Sample data: [{'item': 'item1', 'amount': 400}, {'item': 'item2', 'amount': 300}, {'item': 'item1', 'amount': 750}]
-# Expected Output: Counter({'item1': 1150, 'item2': 300})
+# Expected Output: Counter({'item1': 1150, 'item2': 300})'''
+'''
+n = int(input('enter the number : '))
+dict = {}
+for i in range(n):
+    name,*marks = input('enter the : ').split()
+    new_marks = list(map(float,marks))
+    dict[name] = new_marks
+name = input('do you want which student avg marks ? ')
+if name in dict.keys():
+    print('avg is : ')
+    a = dict[name]
+    avg = sum(a)//len(a)
+    print(avg)
+else:
+    print('plz enter valid student)
+
+
+# find a avg marks of a particular student 
+n = int(input('enter the n '))
+marks = []
+details = {}
+for i in range(n):
+    stu_name,*stu_marks = input('enter the students with_marks also : ').split()
+    details.setdefault(stu_name,stu_marks)
+name = input('do you want which student avg marks : ')
+if name in details.keys():
+    for i in details.values():
+        for j in i:
+            k = float(j)
+            marks.append(k)
+            avg = sum(marks)/len(marks)
+    print(avg)
+if avg >= 80 and avg <= 99:
+    print(name,'has A grade ')
+elif avg >= 60 and avg <= 79:
+    print(name,'has B grade' )
+else:
+    print(name,'has less score')
