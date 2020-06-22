@@ -2,8 +2,9 @@
 A dictionary is a collection which is unordered, changeable and indexed.
 In Python dictionaries are written with curly brackets, and they have keys and values.
 '''
+
 # example
-mydict = {"ap":"amaravathi","telangana":"hyderabad",""}
+mydict = {"ap":"amaravathi","telangana":"hyderabad"}
 print(mydict)
 # access dictonary
 print(mydict["ap"])
@@ -27,10 +28,10 @@ else:
 # Create a dictonary and its prints number and its squares in key-value pair
 # example : {1:1,2:4,3:9,4:16,5:15}
 num = int(input("enter the number : "))
-dict = dict()
+dictt = {}
 for i in range(1,num+1):
-    dict[i] = i * i
-print(dict)
+    dictt[i] = i * i
+print(dictt)
 
 
 # merge two dictonaries
@@ -63,7 +64,7 @@ print(set(list))
 # soretd dictonary by using operator module
 import operator
 d = {"a":1,"b":2,"c":3,"d":4,"e":5}
-res = sorted(dict,key = itemgetter(0),reverse = False)
+res = sorted(dict,key = operator.itemgetter(0),reverse = False)
 print(res)
 
 # how to check the dictonary is empty or not
