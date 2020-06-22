@@ -1,5 +1,6 @@
 import csv
-with open("data.csv","r") as csvfile:
-    csv_file = csv.reader(csvfile)
-    for data in csv_file:
-        print(data)
+with open ('data.csv','r') as csv_file:
+    data = csv.reader(csv_file)
+    next(data)
+    for i in data:
+        print(i)
